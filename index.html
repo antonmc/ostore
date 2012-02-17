@@ -1,0 +1,21 @@
+<html>
+  <head>
+    <title>Orion Plugins</title>
+    <link href="../bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link href="../files/style/store.css" rel="stylesheet">
+  </head>
+  <body>
+    <div id='anchor'></div>
+    <script type="text/javascript" src="../bootstrap/js/jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="../bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/dojo/1.7.1/dojo/dojo.js"></script>
+    <script type="text/javascript">
+      var target = null;
+      {% if orionTarget %} target='{{orionTarget}}'; {% endif %}
+      require(["dojo/dom", "widgets/PluginContainer"], function(dom){
+        var pc = new widgets.PluginContainer( {target: target}, dom.byId( 'anchor' ) );
+      });
+    </script>
+  </body>
+</html>
+
