@@ -12,3 +12,9 @@ class Plugin(db.Model):
   description = db.StringProperty()
   url = db.StringProperty()
   count = db.IntegerProperty()
+  thing = db.IntegerProperty()
+  
+class Suggestion(db.Model):
+  description = db.StringProperty()
+  name = db.StringProperty()
+  contact = db.StringProperty()

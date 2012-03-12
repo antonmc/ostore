@@ -15,7 +15,7 @@ define([
     return declare("widgets.PluginContainer", [widget, templatedMixin], { 
     
         templateString:'<div>' +
-	                  '<div class="container">' +
+	                   '<div class="container">' +
                              '<div class="navbar">' +
                                 '<div class="navbar-inner">' +
                                    '<div class="container" style="width: auto;">' +
@@ -55,7 +55,7 @@ define([
         },
 
 	allowRegistration: function(){
-           construct.place( '<li data-dojo-attach-point="reg"><a data-toggle="modal" href="#myModal">Register a plugin</a></li>', this.navigation )	
+           construct.place( '<li data-dojo-attach-point="reg"><a data-toggle="modal" href="#myModal">Register a plugin</a></li>', this.navigation );	
         },
 
 	refresh: function(){
